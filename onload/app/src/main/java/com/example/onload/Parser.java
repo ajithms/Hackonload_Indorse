@@ -55,10 +55,7 @@ public class Parser {
 
                 if(rule.length() == 1)
                 {
-                    if(map.containsKey(char0)) {
-                        if(checkNext(char0, index )) return true;
-                    }
-                    else {
+                    if(!map.containsKey(char0)) {
                         if(index == input.length()-1 && char0.equals(String.valueOf(input.charAt(index)))) return true;
                     }
                 }
